@@ -3,8 +3,3 @@ div {
     height: 30px;
     width: 30px;
 }
-
-:root {
-    --numCols: 1;
-    --numRows: 1;
-}
