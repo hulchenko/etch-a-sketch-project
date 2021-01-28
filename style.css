@@ -1,5 +1,75 @@
-div {
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+body {
+    margin: 0;
+    background: url(images/background.jpg);
+    background-position: no-repeat;
+}
+
+h1 {
+font-family: 'Bowlby One SC', cursive;
+font-size: 32px;
+color: white;
+text-shadow: 2px 2px black;
+text-align: center;
+}
+
+
+button {
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    height: 70px;
+    font-size: 25px;
+    justify-content: center;
+    font-family: 'Bowlby One SC', cursive;
+    color: white;
+    box-shadow: 3px 3px black;
+    background-color: inherit;
+}
+
+button:focus {
+    outline: none;
+    font-size: 24px;
+}
+
+#reset {
+position: relative;
+padding: 13px 7px;
+}
+
+#container {
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(var(--numCols), 1fr);
+    grid-template-rows: repeat(var(--numRows), 1fr);
+    background: white;
+    border: 15px groove rgb(63, 1, 163);
+}
+
+.cell {
+    display: flex;
     border: 1px solid black;
-    height: 30px;
-    width: 30px;
+    background-color: white;
+    
+}
+
+footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+footer a {
+    color: white;
+}
+
+a:visited, a:hover {
+    text-decoration: none;
 }

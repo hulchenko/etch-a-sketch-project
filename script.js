@@ -10,8 +10,8 @@ reset.addEventListener('click', function(){
 });
 
 //Create div/cells:
-function createCell (cellCount) {
-    for (let c = 0; c < cellCount; c++) {
+function createCell (numCell) {
+    for (let c = 0; c < numCell; c++) {
         cell = document.createElement('div');
         cell.classList.add('cell');
         container.appendChild(cell);
@@ -20,11 +20,11 @@ function createCell (cellCount) {
 
 
 //Create grid with div/cells:
-function createGrid (rowCount, columnCount) {
-    container.style.setProperty('--rows', rowCount);
-    container.style.setProperty('--columnCounts', columnCount);
-    for (let i = 0; i < rowCount; i++); {
-        createCell(columnCount);
+function createGrid (numRow, numCol) {
+    container.style.setProperty('--numRows', numRow);
+    container.style.setProperty('--numCols', numCol);
+    for (let i = 0; i < numRow; i++) {
+        createCell(numCol);
     }      
 }
 
@@ -45,7 +45,7 @@ function promptGrid() {
 
  //Target on-hover effect:
  function changeColor (target) {
-    target.style.backgroundColor = 'black';
+    target.style.backgroundColor = 'purple';
 }
 
 container.addEventListener("mouseover", function (e) {
