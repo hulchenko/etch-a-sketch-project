@@ -1,75 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 
 body {
-    margin: 0;
-    background: url(images/background.jpg);
-    background-position: no-repeat;
+  margin: 0;
+  background: url(images/background.jpg);
+  background-position: no-repeat;
 }
 
 h1 {
-font-family: 'Bowlby One SC', cursive;
-font-size: 32px;
-color: white;
-text-shadow: 2px 2px black;
-text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 32px;
+  color: white;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-
 button {
-    display: flex;
-    margin: 0 auto;
-    width: 100px;
-    height: 70px;
-    font-size: 25px;
-    justify-content: center;
-    font-family: 'Bowlby One SC', cursive;
-    color: white;
-    box-shadow: 3px 3px black;
-    background-color: inherit;
+  display: flex;
+  margin: 0 auto;
+  width: 150px;
+  height: 70px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bowlby One SC', cursive;
+  color: white;
+  box-shadow: 3px 3px black;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 button:focus {
-    outline: none;
-    font-size: 24px;
+  outline: none;
 }
 
-#reset {
-position: relative;
-padding: 13px 7px;
+.buttons {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+#rainbow {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  border-radius: 5px;
+  padding: 40px;
+  border-style: groove;
+  text-shadow: 1px 1px #000;
+}
+
+#rainbow:hover {
+  transform: scale(0.99);
+}
+
+#rainbow:active {
+  transform: scale(0.98);
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 #container {
-    display: grid;
-    justify-content: center;
-    margin: 20px auto;
-    width: 500px;
-    height: 500px;
-    grid-template-columns: repeat(var(--numCols), 1fr);
-    grid-template-rows: repeat(var(--numRows), 1fr);
-    background: white;
-    border: 15px groove rgb(63, 1, 163);
+  display: grid;
+  justify-content: center;
+  margin: 0px auto;
+  width: 500px;
+  height: 500px;
+  grid-template-columns: repeat(var(--numCols), 1fr);
+  grid-template-rows: repeat(var(--numRows), 1fr);
+  background: white;
+  border: 15px groove rgb(63, 1, 163);
 }
 
 .cell {
-    display: flex;
-    border: 1px solid black;
-    background-color: white;
-    
+  display: flex;
+  border: 1px solid black;
+  background-color: white;
 }
 
 footer {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-family: 'Bowlby One SC', cursive;
+  color: white;
+  margin-top: 100px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
 }
 
 footer a {
-    color: white;
+  color: white;
 }
 
-a:visited, a:hover {
-    text-decoration: none;
+a:visited,
+a:hover {
+  text-decoration: none;
 }
