@@ -1,10 +1,25 @@
-Etch-A-Sketch Project
+## Etch-a-Sketch App
 
-Second last project in Odin Projects.
-Project mainly uses CSS and JS.
+This project is a digital recreation of the classic Etch-a-Sketch toy, allowing users to draw on a customizable grid using their mouse. The app provides multiple colour modes, grid resizing options, and a reset feature for a versatile drawing experience.
 
-You can review live demo here:
+<img src="https://raw.githubusercontent.com/hulchenko/etch-a-sketch-project/refs/heads/main/public/images/screen-desktop.png" alt="App Screenshot Desktop"/>
 
-https://hulchenko.github.io/etch-a-sketch-project/
+### Features:
 
-Enjoy!
+- **Default Drawing Mode**: Draw with a default purple colour.
+- **Rainbow Mode**: Draw with randomized colours for a fun and vibrant experience.
+- **Customizable Grid**: Resize the drawing grid to any size between 1x1 and 100x100.
+- **Dynamic Drawing**: Draw by hovering over cells, creating smooth sketches.
+- **Reset Button**: Clear the grid and start fresh with a default layout.
+
+### Technologies Used:
+
+- **HTML**: Provides the structure of the app.
+- **CSS**: Styles the grid and UI elements for an engaging user experience.
+- **JavaScript**: Implements all functionalities, including grid creation, colour changes, and event handling.
+
+### Live Demo:
+
+Experience the Etch-a-Sketch app here: https://hulchenko.github.io/etch-a-sketch-project/
+
+Feel free to unleash your creativity and enjoy the nostalgia of this Etch-a-Sketch-inspired app!
