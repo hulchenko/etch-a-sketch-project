@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+
+* {
+  font-family: "Bowlby One SC", cursive;
+}
 
 body {
   margin: 0;
-  background: url(images/background.jpg);
+  background: url(public/images/background.jpg);
   background-position: no-repeat;
 }
 
 h1 {
-  font-family: 'Bowlby One SC', cursive;
   font-size: 32px;
   color: white;
   text-shadow: 2px 2px black;
@@ -23,7 +26,6 @@ button {
   font-size: 25px;
   justify-content: center;
   align-items: center;
-  font-family: 'Bowlby One SC', cursive;
   color: white;
   box-shadow: 3px 3px black;
   background-color: inherit;
@@ -42,29 +44,23 @@ button:focus {
   margin-bottom: 70px;
 }
 
-#rainbow {
-  background-image: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
-  border-radius: 5px;
-  padding: 40px;
-  border-style: groove;
-  text-shadow: 1px 1px #000;
+#controls {
+  border: 1px solid #aaa;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
-#rainbow:hover {
-  transform: scale(0.99);
+#controls > h3 {
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  margin: 0;
 }
 
-#rainbow:active {
-  transform: scale(0.98);
+#controls > button {
+  height: 50%;
+  margin-block: 5px;
 }
 
 .btn-grad:hover {
@@ -92,12 +88,11 @@ button:focus {
 }
 
 footer {
+  position: absolute;
   color: white;
-  margin-top: 100px;
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-family: 'Bowlby One SC', cursive;
 }
 
 footer a {
