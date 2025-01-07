@@ -1,6 +1,6 @@
 ## Etch-a-Sketch App
 
-This project is a digital recreation of the classic Etch-a-Sketch toy, allowing users to draw on a customizable grid using their mouse. The app provides multiple colour modes, grid resizing options, and a reset feature for a versatile drawing experience.
+This project is a digital recreation of the classic Etch-a-Sketch toy. It allows users to draw on a customizable grid using their mouse. The app provides multiple colour modes, grid resizing options, and a reset feature for a versatile drawing experience.
 
 <img src="https://raw.githubusercontent.com/hulchenko/etch-a-sketch-project/refs/heads/main/public/images/desktop-screen.png" alt="App Screenshot Desktop"/>
 
